@@ -8,6 +8,14 @@ This project implements a deep learning-based system to classify breast cancer i
 
 The system is wrapped in a **Gradio-based web interface**, allowing users to upload mammogram images and receive real-time predictions.
 
+<!-- Include this at the start of your project overview section -->
+# **OncologyBreastScanner for Breast Cancer Detection**
+
+<video controls width="640" height="360">
+  <source src="video.mov" type="video/quicktime">
+  Your browser does not support the video tag.
+</video>
+
 ## Features
 
 - **Deep Learning Classification**: Utilizes the DenseNet201 model to classify images into 8 categories based on malignancy and tissue density.
@@ -58,12 +66,26 @@ The system is wrapped in a **Gradio-based web interface**, allowing users to upl
 
 - **Preprocessing**: The images are preprocessed by applying filters to enhance relevant features. They are resized to 224x224 and normalized for use with the DenseNet201 model.
 
+## Training Images for each Class
+
+#### Benign 
+![Benign](https://github.com/ksamaarora/OncologyBreastScanner-deeplearning/blob/main/image/Begign.png)
+
+#### Malignant
+![Malignant](https://github.com/ksamaarora/OncologyBreastScanner-deeplearning/blob/main/image/malignant.png)
+
 ### Workflow:
 
 1. **Image Upload**: Users upload an image through the Gradio interface.
 2. **Preprocessing**: The image is preprocessed by applying filters and normalization.
 3. **Model Prediction**: The processed image is passed to the model for classification.
 4. **Output**: The model outputs the predicted class along with probabilities for each of the 8 categories.
+
+## Image Processing
+
+Since mammograms often appear blurry and dull, image preprocessing has been done to enhance sharpness and contrast, improving model performance:
+
+![Processing](https://github.com/ksamaarora/OncologyBreastScanner-deeplearning/blob/main/image/processing.png)
 
 ## How to Run the Project Locally
 
@@ -102,33 +124,3 @@ The system is wrapped in a **Gradio-based web interface**, allowing users to upl
    ```bash
    conda deactivate
    ```
-
-## Folder Structure
-
-```
-/oncology-breast-scanner
-│
-├── model/                   # Contains the model architecture
-│   └── model.h5             # Pre-trained model
-├── weights/                 # Contains the model weights
-│   └── modeldense1.h5       # Fine-tuned weights
-├── app.py                   # Main application script
-├── download_model.py        # Script to download model and weights
-├── requirements.txt         # List of required libraries
-├── README.md                # This file
-└── images/                  # Directory to store sample images
-```
-
-## Training Images for each Class
-
-#### Benign 
-![Benign](https://github.com/ksamaarora/OncologyBreastScanner/blob/main/image/Begign.png)
-
-#### Malignant
-![Malignant](https://github.com/ksamaarora/OncologyBreastScanner/blob/main/image/malignant.png)
-
-## Image Processing
-
-Since mammograms often appear blurry and dull, image preprocessing has been done to enhance sharpness and contrast, improving model performance:
-
-![Processing](https://github.com/ksamaarora/OncologyBreastScanner/blob/main/image/processing.png)
