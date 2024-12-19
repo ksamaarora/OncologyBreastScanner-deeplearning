@@ -8,13 +8,7 @@ This project implements a deep learning-based system to classify breast cancer i
 
 The system is wrapped in a **Gradio-based web interface**, allowing users to upload mammogram images and receive real-time predictions.
 
-<!-- Include this at the start of your project overview section -->
-# **OncologyBreastScanner for Breast Cancer Detection**
-
-<video controls width="640" height="360">
-  <source src="video.mov" type="video/quicktime">
-  Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/4e5d1de2-7954-4024-b94f-e0b976db4a05
 
 ## Features
 
