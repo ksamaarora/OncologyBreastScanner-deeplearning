@@ -29,6 +29,8 @@ https://github.com/user-attachments/assets/4e5d1de2-7954-4024-b94f-e0b976db4a05
 - **Benign** (non-cancerous)
 - **Malignant** (cancerous)
 
+<img width="536" alt="Screenshot 2024-12-21 at 2 15 34 PM" src="https://github.com/user-attachments/assets/28d6d5b3-065d-4918-96af-0c8a1f5cf5c0" />
+
 ### Classification Categories:
 
 1. **Benign with Density = 1**
